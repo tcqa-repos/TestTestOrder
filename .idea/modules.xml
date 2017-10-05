@@ -5,6 +5,9 @@
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/TestTestOrder.iml" filepath="$PROJECT_DIR$/.idea/modules/TestTestOrder.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/TestTestOrder_main.iml" filepath="$PROJECT_DIR$/.idea/modules/TestTestOrder_main.iml" group="TestTestOrder" />
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/TestTestOrder_test.iml" filepath="$PROJECT_DIR$/.idea/modules/TestTestOrder_test.iml" group="TestTestOrder" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/buildSrc.iml" filepath="$PROJECT_DIR$/.idea/modules/buildSrc.iml" group="buildSrc" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/buildSrc/buildSrc_main.iml" filepath="$PROJECT_DIR$/.idea/modules/buildSrc/buildSrc_main.iml" group="buildSrc" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/buildSrc/buildSrc_test.iml" filepath="$PROJECT_DIR$/.idea/modules/buildSrc/buildSrc_test.iml" group="buildSrc" />
     </modules>
   </component>
 </project>

@@ -5,6 +5,8 @@ apply plugin: 'java'
 
 sourceCompatibility = 1.8
 
+import org.gradle.api.internal.tasks.testing.junit.*;
+
 repositories {
     mavenCentral()
 }
@@ -18,3 +20,5 @@ test {
         events "passed", "skipped", "failed", "standardOut", "standardError"
     }
 }
+
+//new JUnitTestClassExecuter()

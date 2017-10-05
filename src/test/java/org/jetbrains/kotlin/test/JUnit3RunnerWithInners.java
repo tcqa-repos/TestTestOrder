@@ -74,6 +74,11 @@ public class JUnit3RunnerWithInners extends Runner implements Filterable, Sortab
         this.klass = klass;
         requestedRunners.add(klass);
         System.out.println("Requested " + klass.getCanonicalName());
+
+        for (Class c :
+                requestedRunners) {
+            System.out.println("Req prev "+ c.getSimpleName());
+        }
     }
 
     @Override
@@ -92,12 +97,14 @@ public class JUnit3RunnerWithInners extends Runner implements Filterable, Sortab
     public void filter(Filter filter) throws NoTestsRemainException {
         delegateRunner = new JUnit38ClassRunner(klass);
         delegateRunner.filter(filter);
+        System.out.println(filter);
     }
 
     @Override
     public void sort(Sorter sorter) {
         initialize();
         delegateRunner.sort(sorter);
+        System.out.println(sorter);
     }
 
     protected void initialize() {
