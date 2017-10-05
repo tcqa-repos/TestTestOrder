@@ -73,6 +73,7 @@ public class JUnit3RunnerWithInners extends Runner implements Filterable, Sortab
     public JUnit3RunnerWithInners(Class<?> klass) {
         this.klass = klass;
         requestedRunners.add(klass);
+        System.out.println("Requested " + klass.getCanonicalName());
     }
 
     @Override
@@ -108,7 +109,14 @@ public class JUnit3RunnerWithInners extends Runner implements Filterable, Sortab
         List<Class> innerClasses = collectDeclaredClasses(klass, false);
         Set<Class> unprocessedInnerClasses = unprocessedClasses(innerClasses);
 
+        System.out.println("======== Unprocessed found");
+        for (Class uklass: unprocessedInnerClasses) {
+            System.out.println("= " + uklass.getCanonicalName());
+        }
+        System.out.println("========");
+
         if (unprocessedInnerClasses.isEmpty()) {
+            System.out.println("Unprocessed is empty");
             if (!innerClasses.isEmpty() && !hasTestMethods(klass)) {
                 isFakeTest = true;
                 return new FakeEmptyClassTest(klass);
@@ -118,9 +126,11 @@ public class JUnit3RunnerWithInners extends Runner implements Filterable, Sortab
             }
         }
         else if (unprocessedInnerClasses.size() == innerClasses.size()) {
+            System.out.println("Create TreeTestSuite");
             return createTreeTestSuite(klass);
         }
         else {
+            System.out.println("Create default test suite");
             return new TestSuite(klass.asSubclass(TestCase.class));
         }
     }
