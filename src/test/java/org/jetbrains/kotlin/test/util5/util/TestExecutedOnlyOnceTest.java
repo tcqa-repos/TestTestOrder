@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-package org.jetbrains.kotlin.test.util;
+package org.jetbrains.kotlin.test.util5.util;
 
 import junit.framework.TestCase;
 import org.jetbrains.kotlin.test.JUnit3RunnerWithInners;

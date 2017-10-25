@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-package org.jetbrains.kotlin.test.util;
+package org.jetbrains.kotlin.test.util6.util;
 
 import junit.framework.TestCase;
 import org.jetbrains.kotlin.test.JUnit3RunnerWithInners;
@@ -22,7 +22,7 @@ import org.junit.runner.RunWith;
 
 @SuppressWarnings("ALL")
 @RunWith(JUnit3RunnerWithInners.class)
-public class TestExecutedOnlyOnceTest extends TestCase {
+public class TestExecutedOnlyOnceTest6 extends TestCase {
     public static boolean testA = false;
 
     public void testA() throws Exception {
@@ -291,54 +291,6 @@ public class TestExecutedOnlyOnceTest extends TestCase {
         public void testD() throws Exception {
             assertFalse(testD);
             testC = true;
-        }
-
-        public void testE() throws Exception {
-            Thread.sleep(10);
-        }
-
-        public void testF() throws Exception {
-            Thread.sleep(10);
-        }
-
-        public void testG() throws Exception {
-            Thread.sleep(10);
-        }
-
-        public void testH() throws Exception {
-            Thread.sleep(10);
-        }
-
-        public void testI() throws Exception {
-            Thread.sleep(10);
-        }
-
-        public void testJ() throws Exception {
-            Thread.sleep(10);
-        }
-
-        public void testK() throws Exception {
-            Thread.sleep(10);
-        }
-
-        public void testL() throws Exception {
-            Thread.sleep(10);
-        }
-
-        public void testM() throws Exception {
-            Thread.sleep(10);
-        }
-
-        public void testN() throws Exception {
-            Thread.sleep(10);
-        }
-
-        public void testO() throws Exception {
-            Thread.sleep(10);
-        }
-
-        public void testP() throws Exception {
-            Thread.sleep(10);
         }
     }
 }

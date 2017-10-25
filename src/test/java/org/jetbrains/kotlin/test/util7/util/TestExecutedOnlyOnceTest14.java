@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-package org.jetbrains.kotlin.test.util;
+package org.jetbrains.kotlin.test.util7.util;
 
 import junit.framework.TestCase;
 import org.jetbrains.kotlin.test.JUnit3RunnerWithInners;
@@ -22,7 +22,7 @@ import org.junit.runner.RunWith;
 
 @SuppressWarnings("ALL")
 @RunWith(JUnit3RunnerWithInners.class)
-public class TestExecutedOnlyOnceTest extends TestCase {
+public class TestExecutedOnlyOnceTest14 extends TestCase {
     public static boolean testA = false;
 
     public void testA() throws Exception {
