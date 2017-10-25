@@ -65,4 +65,232 @@ public class TestExecutedOnlyOnceTest extends TestCase {
             }
         }
     }
+
+    @RunWith(JUnit3RunnerWithInners.class)
+    public static class InnerTest1 extends TestCase {
+        private static boolean testB;
+        private static boolean testC;
+
+        public void testB() throws Exception {
+            assertFalse(testB);
+            testB = true;
+        }
+
+        public void testC() throws Exception {
+            assertFalse(testC);
+            testC = true;
+        }
+    }
+
+    @RunWith(JUnit3RunnerWithInners.class)
+    public static class InnerTest2 extends TestCase {
+        private static boolean testB;
+        private static boolean testC;
+
+        public void testB() throws Exception {
+            assertFalse(testB);
+            testB = true;
+        }
+
+        public void testC() throws Exception {
+            assertFalse(testC);
+            testC = true;
+        }
+    }
+
+    @RunWith(JUnit3RunnerWithInners.class)
+    public static class InnerTest3 extends TestCase {
+        private static boolean testA;
+        private static boolean testB;
+        private static boolean testC;
+        private static boolean testD;
+
+        public void testA() throws Exception {
+            assertFalse(testB);
+            testB = true;
+        }
+
+        public void testB() throws Exception {
+            assertFalse(testB);
+            testB = true;
+        }
+
+        public void testC() throws Exception {
+            assertFalse(testC);
+            testC = true;
+        }
+
+        public void testD() throws Exception {
+            assertFalse(testD);
+            testC = true;
+        }
+    }
+
+    @RunWith(JUnit3RunnerWithInners.class)
+    public static class InnerTest4 extends TestCase {
+        private static boolean testA;
+        private static boolean testB;
+        private static boolean testC;
+        private static boolean testD;
+
+        public void testA() throws Exception {
+            assertFalse(testB);
+            testB = true;
+        }
+
+        public void testB() throws Exception {
+            assertFalse(testB);
+            testB = true;
+        }
+
+        public void testC() throws Exception {
+            assertFalse(testC);
+            testC = true;
+        }
+
+        public void testD() throws Exception {
+            assertFalse(testD);
+            testC = true;
+        }
+    }
+
+    @RunWith(JUnit3RunnerWithInners.class)
+    public static class InnerTest5 extends TestCase {
+        private static boolean testA;
+        private static boolean testB;
+        private static boolean testC;
+        private static boolean testD;
+
+        public void testA() throws Exception {
+            assertFalse(testB);
+            testB = true;
+        }
+
+        public void testB() throws Exception {
+            assertFalse(testB);
+            testB = true;
+        }
+
+        public void testC() throws Exception {
+            assertFalse(testC);
+            testC = true;
+        }
+
+        public void testD() throws Exception {
+            assertFalse(testD);
+            testC = true;
+        }
+    }
+
+    @RunWith(JUnit3RunnerWithInners.class)
+    public static class InnerTest6 extends TestCase {
+        private static boolean testA;
+        private static boolean testB;
+        private static boolean testC;
+        private static boolean testD;
+
+        public void testA() throws Exception {
+            assertFalse(testB);
+            testB = true;
+        }
+
+        public void testB() throws Exception {
+            assertFalse(testB);
+            testB = true;
+        }
+
+        public void testC() throws Exception {
+            assertFalse(testC);
+            testC = true;
+        }
+
+        public void testD() throws Exception {
+            assertFalse(testD);
+            testC = true;
+        }
+    }
+
+    @RunWith(JUnit3RunnerWithInners.class)
+    public static class InnerTest7 extends TestCase {
+        private static boolean testA;
+        private static boolean testB;
+        private static boolean testC;
+        private static boolean testD;
+
+        public void testA() throws Exception {
+            assertFalse(testB);
+            testB = true;
+        }
+
+        public void testB() throws Exception {
+            assertFalse(testB);
+            testB = true;
+        }
+
+        public void testC() throws Exception {
+            assertFalse(testC);
+            testC = true;
+        }
+
+        public void testD() throws Exception {
+            assertFalse(testD);
+            testC = true;
+        }
+    }
+
+    @RunWith(JUnit3RunnerWithInners.class)
+    public static class InnerTest8 extends TestCase {
+        private static boolean testA;
+        private static boolean testB;
+        private static boolean testC;
+        private static boolean testD;
+
+        public void testA() throws Exception {
+            assertFalse(testB);
+            testB = true;
+        }
+
+        public void testB() throws Exception {
+            assertFalse(testB);
+            testB = true;
+        }
+
+        public void testC() throws Exception {
+            assertFalse(testC);
+            testC = true;
+        }
+
+        public void testD() throws Exception {
+            assertFalse(testD);
+            testC = true;
+        }
+    }
+
+    @RunWith(JUnit3RunnerWithInners.class)
+    public static class InnerTest9 extends TestCase {
+        private static boolean testA;
+        private static boolean testB;
+        private static boolean testC;
+        private static boolean testD;
+
+        public void testA() throws Exception {
+            assertFalse(testB);
+            testB = true;
+        }
+
+        public void testB() throws Exception {
+            assertFalse(testB);
+            testB = true;
+        }
+
+        public void testC() throws Exception {
+            assertFalse(testC);
+            testC = true;
+        }
+
+        public void testD() throws Exception {
+            assertFalse(testD);
+            testC = true;
+        }
+    }
 }
