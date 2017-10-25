@@ -22,7 +22,7 @@ import org.junit.runner.RunWith;
 
 @SuppressWarnings("ALL")
 @RunWith(JUnit3RunnerWithInners.class)
-public class TestExecutedOnlyOnceTest extends TestCase {
+public class TestExecutedOnlyOnceTest7 extends TestCase {
     public static boolean testA = false;
 
     public void testA() throws Exception {
