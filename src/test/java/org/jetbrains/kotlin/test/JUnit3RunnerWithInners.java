@@ -145,6 +145,7 @@ public class JUnit3RunnerWithInners extends Runner implements Filterable, Sortab
             }
         }
 
+        System.out.println("Class suites root: " + classSuites.get(root));
         return classSuites.get(root);
     }
 
